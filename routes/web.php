@@ -24,31 +24,7 @@ Route::get('/dashboard', function () {
 require __DIR__ . '/auth.php';
 
 
-//Route::group(['middleware' => ['web']], function () {
-    /**
-     * Show Task Dashboard
-     */
-    Route::resource('/task', 'TaskController')->middleware(['auth']);
-
-    /**
-     * Add New Task
-     */
-    
-
-    
-    // Route::delete('/task/{id}', function ($id) {
-    //     Task::findOrFail($id)->delete();
-
-    //     return redirect('/');
-    // });
-
-    // Route::post('task_update/{id}', function (Request $request, $id) {
-    //     dd($request->all());
-    //     $task =  Task::findOrFail($id);
-    //     $task->status = $request->status;
-    //     $task->save();
-    //     return response()->json(['status' => true, 'success' => true]);
-
-    //     // return redirect('/');
-    // });
-//});
+/**
+ * Show Task Dashboard
+ */
+Route::resource('/task', 'TaskController')->middleware(['auth']);
