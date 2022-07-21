@@ -51,9 +51,7 @@ chown -R www-data.www-data /var/www/project_dir_name/storage
 ```
 php artisan migrate
 ```
-```
-php artisan db:seed
-```
+
 ```
 php artisan serve
 
@@ -68,7 +66,7 @@ http://localhost:8000/
 - Add tasks
 - Or Click go to Task list button
 - Change status (pending,progress and completed)
-- Delete Tasks
+- Delete Tasks (It will be soft delete)
 - For Pending Title color will be orange
 - For Progress Title color will be Green
 - For Completed Title  will be line through
