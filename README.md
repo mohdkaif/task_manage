@@ -30,13 +30,15 @@ composer install && composer dump-autoload
 - create new .env file and copy data from .env.example and paste in new .env file
 
 ```
-php artisan key:generate
-```
-```
 cp .env.example .env
 ```
-- change .env file database configuration
 
+- For Generate Key
+
+```
+php artisan key:generate
+```
+- change .env file database configuration
 
 - Permission to directories
 ```
